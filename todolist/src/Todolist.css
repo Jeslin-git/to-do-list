@@ -1,0 +1,157 @@
+/* Enhanced Pastel Theme CSS for Better Visibility */
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #fde2ff, #e0f7fa, #fffde7);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #444;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body::before {
+  content: '';
+  background: url('https://www.transparenttextures.com/patterns/stardust.png');
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+  z-index: 0;
+}
+
+.div1 {
+  width: 90%;
+  max-width: 650px;
+  margin: 2rem;
+  padding: 2.5rem;
+  background: linear-gradient(to right, #ffffff, #fdf1f7);
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #6d597a;
+  background: linear-gradient(to right, #cdb4db, #b5ead7, #ffdac1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+}
+
+.input {
+  width: 65%;
+  padding: 0.8rem 1rem;
+  border: 2px solid #d1cfe2;
+  border-radius: 12px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  outline: none;
+  margin-right: 10px;
+  box-shadow: 2px 2px 6px rgba(200, 200, 200, 0.2);
+}
+
+.btn {
+  padding: 0.8rem 1.2rem;
+  background: linear-gradient(to right, #b5ead7, #caffbf);
+  border: none;
+  border-radius: 12px;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(to right, #ffdac1, #fcddec);
+  transform: scale(1.05);
+}
+
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 2rem;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #a9e9b2, #e2fbfb);
+  margin-bottom: 1rem;
+  padding: 1.2rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
+  animation: fadeInSlide 0.4s ease-in-out;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.text {
+  flex-grow: 1;
+  word-break: break-word;
+  padding-right: 10px;
+}
+
+.delete,
+.up,
+.down {
+  margin-left: 0.4rem;
+  padding: 0.5rem 0.7rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete {
+  background: #f4978e;
+}
+.delete:hover {
+  background: #f08080;
+  transform: scale(1.1);
+}
+
+.up {
+  background: #9ad0ec;
+}
+.up:hover {
+  background: #74c0fc;
+  transform: translateY(-2px);
+}
+
+.down {
+  background: #c3aed6;
+}
+.down:hover {
+  background: #b892d2;
+  transform: translateY(2px);
+}
